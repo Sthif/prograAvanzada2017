@@ -12,17 +12,30 @@ namespace Examen
     [ServiceContract]
     public interface IService1
     {
-        
         // perimetros **********************************************
         [OperationContract]
-        int PerimetroTriangulo(int lado1, int lado2, int lado3);
+        double PerimetroTriangulo(double lado1, double lado2, double lado3);
         
-        
-        // areas ******************************************
-
+        // areas ***************************************************
         [OperationContract]
-        double AreaTriangulo(int lado1, int lado2, int lado3);
+        double AreaTriangulo(double lado1, double lado2, double lado3);
 
+        double AreaCuadrado(double lado);
+
+        double AreaRectangulo(double largo, double ancho);
+
+        double AreaRombo(double diagonalMayor, double diagonalMenor);
+
+        double AreaPoligonoRegular(double lado, double apotema, int cantidadLados);
+
+        double AreaTrapecio(double baseMayor, double baseMenor, double altura);
+
+        double AreaRomboide(double baseRomboide, double altura);
+
+        // volumenes ***********************************************
+        
+        
+        // sistema *************************************************
         [OperationContract]
         string GetData(int value);
 

@@ -12,15 +12,17 @@ namespace Examen
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public int PerimetroTriangulo(int lado1, int lado2, int lado3)
+        // ********** PERIMETROS ********** 
+        public double PerimetroTriangulo(double lado1, double lado2, double lado3)
         {
-            int elResultado;
+            double elResultado;
             var laAccion = new Dominio.Acciones.CalcularPerimetro();
             elResultado = laAccion.CalcularPerimetroTriangulo(lado1, lado2, lado3);
             return elResultado;
         }
 
-        public double AreaTriangulo(int lado1, int lado2, int lado3)
+        // ********** AREAS **********
+        public double AreaTriangulo(double lado1, double lado2, double lado3)
         {
             double elResultado;
             var laAccion = new Dominio.Acciones.CalcularArea();
@@ -28,6 +30,59 @@ namespace Examen
             return elResultado; 
         }
 
+        public double AreaCuadrado(double lado)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaCuadrilatero(lado, lado);
+            return elResultado;
+        }
+
+        public double AreaRectangulo(double largo, double ancho)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaCuadrilatero(largo, ancho);
+            return elResultado;
+        }
+
+        public double AreaRombo(double diagonalMayor, double diagonalMenor)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaRombo(diagonalMayor, diagonalMenor);
+            return elResultado;
+        }
+
+        public double AreaPoligonoRegular(double lado, double apotema, int cantidadLados)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaPoligonoRegular(lado, apotema, cantidadLados);
+            return elResultado;
+        }
+
+        public double AreaTrapecio(double baseMayor, double baseMenor, double altura)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaTrapecio(baseMayor, baseMenor, altura);
+            return elResultado;
+        }
+
+        public double AreaRomboide(double baseRomboide, double altura)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaCuadrilatero(baseRomboide, altura);
+            return elResultado;
+        }
+
+        // ********** VOLUMENES **********
+
+
+
+        // ********** SISTEMA **********
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
@@ -45,6 +100,5 @@ namespace Examen
             }
             return composite;
         }
-               
     }
 }
