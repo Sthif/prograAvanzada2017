@@ -28,6 +28,69 @@ namespace Examen
             return elResultado; 
         }
 
+
+
+		// Seccion de  Volumenes  
+
+		  public double VolumenCilindro(int Radio, int Altura)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularVolumen();
+            elResultado = laAccion.CalcularVolumenCilindro(Radio,Altura);
+            return elResultado; 
+        }
+
+		  public double VolumenEsfera(int Radio)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularVolumen();
+            elResultado = laAccion.CalcularVolumenEsfera(Radio);
+            return elResultado; 
+        }
+
+		  public double VolumenCono(int Radio, int Altura)
+        {
+           double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularVolumen();
+            elResultado = laAccion.CalcularVolumenCono(Radio,Altura);
+            return elResultado;  
+        }
+
+		  public double VolumenCubo(int Arista)
+        { 
+		    double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularVolumen();
+            elResultado = laAccion.CalcularVolumenCubo(Arista);
+            return elResultado;  
+        }
+
+		  public double VolumenPrisma(int Largo, int Ancho, int Altura)
+        {
+             double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularVolumen();
+            elResultado = laAccion.CalcularVolumenPrisma(Largo,Ancho,Altura);
+            return elResultado; 
+        }
+
+		  public double VolumenPiramideCuadrada(int LadoBase, int Altura)
+        {
+             double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularVolumen();
+            elResultado = laAccion.CalcularVolumenCuadrada(LadoBase,Altura);
+            return elResultado; 
+        }		
+
+		  public double VolumenPiramidePoligonal(int Apotema, int Altura ,int CantLadosBaseYLargo)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularVolumen();
+            elResultado = laAccion.CalcularVolumenPiramidePoligonal(Apotema,Altura,CantLadosBaseYLargo);
+            return elResultado; 
+        }
+
+		// fin de volumenes 
+		
+
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);

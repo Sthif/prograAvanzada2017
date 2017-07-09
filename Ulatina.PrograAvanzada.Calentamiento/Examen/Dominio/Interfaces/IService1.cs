@@ -23,11 +23,41 @@ namespace Examen
         [OperationContract]
         double AreaTriangulo(int lado1, int lado2, int lado3);
 
+
+	   // Volumenes ******************************************
+
+	    [OperationContract]
+        double VolumenCilindro(int Radio, int Altura);
+
+		   [OperationContract]
+        double VolumenEsfera(int Radio);
+
+		   [OperationContract]
+        double VolumenCono(int Radio, int Altura);
+
+		   [OperationContract]
+        double VolumenCubo(int Arista);
+
+		   [OperationContract]
+        double VolumenPrisma(int Largo, int Ancho, int Altura);
+
+		   [OperationContract]
+        double VolumenPiramideCuadrada(int LadoBase, int Altura);
+
+		   [OperationContract]
+        double VolumenPiramidePoligonal(int Apotema, int Altura ,int CantLadosBaseYLargo);
+
+
+
         [OperationContract]
         string GetData(int value);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
+
+
+
+
 
         // TODO: Add your service operations here
     }
