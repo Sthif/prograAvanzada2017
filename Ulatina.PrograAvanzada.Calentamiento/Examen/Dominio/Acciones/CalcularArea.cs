@@ -13,6 +13,11 @@ namespace Examen.Dominio.Acciones
             var laEspecificacion = new Especificaciones.CalculeArea();
             elResultado = laEspecificacion.AreaTriangulo(lado1, lado2, lado3);
             return elResultado;
+
+
+
+
+
         }
     }
 }
