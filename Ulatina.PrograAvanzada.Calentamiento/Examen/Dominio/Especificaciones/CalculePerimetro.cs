@@ -10,7 +10,7 @@ namespace Examen.Dominio.Especificaciones
         public int PerimetroTriangulo(int lado1, int lado2, int lado3)
         {
             int elResultado = 0;
-            var laValidacion = new Validaciones.Triangulo();
+            var laValidacion = new Validaciones.LadosValidos();
             bool ladosValidos = laValidacion.LadosTrianguloValidos(lado1, lado2, lado3);
             if (ladosValidos)
             {

@@ -80,7 +80,7 @@
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="Dominio\Interfaces\IService1.cs" />
-    <Compile Include="Dominio\Validaciones\Triangulo.cs" />
+    <Compile Include="Dominio\Validaciones\LadosValidos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

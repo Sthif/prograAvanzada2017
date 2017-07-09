@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Examen.Dominio.Validaciones
 {
-    public class Triangulo
+    public class LadosValidos
     {
         public bool LadosTrianguloValidos(int lado1, int lado2, int lado3) // lado 3 es el mas largo 
         {

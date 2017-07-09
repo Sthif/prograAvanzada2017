@@ -12,6 +12,7 @@ namespace Examen
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        // ********** PERIMETROS ********** 
         public int PerimetroTriangulo(int lado1, int lado2, int lado3)
         {
             int elResultado;
@@ -20,6 +21,7 @@ namespace Examen
             return elResultado;
         }
 
+        // ********** AREAS **********
         public double AreaTriangulo(int lado1, int lado2, int lado3)
         {
             double elResultado;
@@ -27,6 +29,16 @@ namespace Examen
             elResultado = laAccion.CalcularAreaTriangulo(lado1, lado2, lado3);
             return elResultado; 
         }
+
+        public int AreaCuadrado(int lado)
+        {
+            int elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaCuadrado(lado);
+            return elResultado;
+        }
+
+        // ********** VOLUMENES **********
 
         public string GetData(int value)
         {
@@ -44,7 +56,6 @@ namespace Examen
                 composite.StringValue += "Suffix";
             }
             return composite;
-        }
-               
+        }       
     }
 }

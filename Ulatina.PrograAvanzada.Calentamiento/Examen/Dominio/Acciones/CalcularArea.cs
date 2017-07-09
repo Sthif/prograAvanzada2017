@@ -14,5 +14,13 @@ namespace Examen.Dominio.Acciones
             elResultado = laEspecificacion.AreaTriangulo(lado1, lado2, lado3);
             return elResultado;            
         }
+
+        public int CalcularAreaCuadrado(int lado)
+        {
+            int elResultado = 0;
+            var laEspecificacion = new Especificaciones.CalculeArea();
+            elResultado = laEspecificacion.AreaCuadrado(lado);
+            return elResultado;
+        }
     }
 }
