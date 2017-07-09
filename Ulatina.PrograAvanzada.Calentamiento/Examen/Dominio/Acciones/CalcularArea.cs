@@ -15,19 +15,11 @@ namespace Examen.Dominio.Acciones
             return elResultado;            
         }
 
-        public double CalcularAreaCuadrado(double lado)
+        public double CalcularAreaCuadrilatero(double lado1, double lado2)
         {
             double elResultado = 0;
             var laEspecificacion = new Especificaciones.CalculeArea();
-            elResultado = laEspecificacion.AreaCuadrado(lado);
-            return elResultado;
-        }
-
-        public double CalcularAreaRectangulo(double largo, double ancho)
-        {
-            double elResultado = 0;
-            var laEspecificacion = new Especificaciones.CalculeArea();
-            elResultado = laEspecificacion.AreaRectangulo(largo, ancho);
+            elResultado = laEspecificacion.AreaCuadrilatero(lado1, lado2);
             return elResultado;
         }
 

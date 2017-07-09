@@ -23,27 +23,14 @@ namespace Examen.Dominio.Especificaciones
             return elResultado;
         }
 
-        public double AreaCuadrado(double lado)
+        public double AreaCuadrilatero(double lado1, double lado2)
         {
             double elResultado = 0;
             var laValidacion = new Validaciones.LadosValidos();
-            bool ladosValidos = laValidacion.LadosPositivos(lado);
+            bool ladosValidos = laValidacion.LadosPositivos(lado1, lado2);
             if (ladosValidos)
             {
-                double elArea = lado * lado;
-                elResultado = elArea;
-            }
-            return elResultado;
-        }
-
-        public double AreaRectangulo(double largo, double ancho)
-        {
-            double elResultado = 0;
-            var laValidacion = new Validaciones.LadosValidos();
-            bool ladosValidos = laValidacion.LadosPositivos(largo, ancho);
-            if (ladosValidos)
-            {
-                double elArea = largo * ancho;
+                double elArea = lado1 * lado2;
                 elResultado = elArea;
             }
             return elResultado;

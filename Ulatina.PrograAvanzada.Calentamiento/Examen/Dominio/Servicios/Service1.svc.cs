@@ -34,7 +34,7 @@ namespace Examen
         {
             double elResultado;
             var laAccion = new Dominio.Acciones.CalcularArea();
-            elResultado = laAccion.CalcularAreaCuadrado(lado);
+            elResultado = laAccion.CalcularAreaCuadrilatero(lado, lado);
             return elResultado;
         }
 
@@ -42,7 +42,7 @@ namespace Examen
         {
             double elResultado;
             var laAccion = new Dominio.Acciones.CalcularArea();
-            elResultado = laAccion.CalcularAreaRectangulo(largo, ancho);
+            elResultado = laAccion.CalcularAreaCuadrilatero(largo, ancho);
             return elResultado;
         }
 
@@ -70,8 +70,19 @@ namespace Examen
             return elResultado;
         }
 
+        public double AreaRomboide(double baseRomboide, double altura)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaCuadrilatero(baseRomboide, altura);
+            return elResultado;
+        }
+
         // ********** VOLUMENES **********
 
+
+
+        // ********** SISTEMA **********
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);

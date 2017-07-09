@@ -30,6 +30,8 @@ namespace Examen
 
         double AreaTrapecio(double baseMayor, double baseMenor, double altura);
 
+        double AreaRomboide(double baseRomboide, double altura);
+
         // volumenes ***********************************************
         
         
