@@ -7,7 +7,7 @@ namespace Examen.Dominio.Acciones
 {
     public class CalcularArea
     {
-        public double CalcularAreaTriangulo(int lado1, int lado2, int lado3)
+        public double CalcularAreaTriangulo(double lado1, double lado2, double lado3)
         {
             double elResultado = 0;
             var laEspecificacion = new Especificaciones.CalculeArea();
@@ -15,11 +15,43 @@ namespace Examen.Dominio.Acciones
             return elResultado;            
         }
 
-        public int CalcularAreaCuadrado(int lado)
+        public double CalcularAreaCuadrado(double lado)
         {
-            int elResultado = 0;
+            double elResultado = 0;
             var laEspecificacion = new Especificaciones.CalculeArea();
             elResultado = laEspecificacion.AreaCuadrado(lado);
+            return elResultado;
+        }
+
+        public double CalcularAreaRectangulo(double largo, double ancho)
+        {
+            double elResultado = 0;
+            var laEspecificacion = new Especificaciones.CalculeArea();
+            elResultado = laEspecificacion.AreaRectangulo(largo, ancho);
+            return elResultado;
+        }
+
+        public double CalcularAreaRombo(double diagonalMayor, double diagonalMenor)
+        {
+            double elResultado = 0;
+            var laEspecificacion = new Especificaciones.CalculeArea();
+            elResultado = laEspecificacion.AreaRombo(diagonalMayor, diagonalMenor);
+            return elResultado;
+        }
+
+        public double CalcularAreaPoligonoRegular(double lado, double apotema, int cantidadLados)
+        {
+            double elResultado = 0;
+            var laEspecificacion = new Especificaciones.CalculeArea();
+            elResultado = laEspecificacion.AreaPoligonoRegular(lado, apotema, cantidadLados);
+            return elResultado;
+        }
+
+        public double CalcularAreaTrapecio(double baseMayor, double baseMenor, double altura)
+        {
+            double elResultado = 0;
+            var laEspecificacion = new Especificaciones.CalculeArea();
+            elResultado = laEspecificacion.AreaTrapecio(baseMayor, baseMenor, altura);
             return elResultado;
         }
     }

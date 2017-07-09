@@ -13,16 +13,16 @@ namespace Examen
     public class Service1 : IService1
     {
         // ********** PERIMETROS ********** 
-        public int PerimetroTriangulo(int lado1, int lado2, int lado3)
+        public double PerimetroTriangulo(double lado1, double lado2, double lado3)
         {
-            int elResultado;
+            double elResultado;
             var laAccion = new Dominio.Acciones.CalcularPerimetro();
             elResultado = laAccion.CalcularPerimetroTriangulo(lado1, lado2, lado3);
             return elResultado;
         }
 
         // ********** AREAS **********
-        public double AreaTriangulo(int lado1, int lado2, int lado3)
+        public double AreaTriangulo(double lado1, double lado2, double lado3)
         {
             double elResultado;
             var laAccion = new Dominio.Acciones.CalcularArea();
@@ -30,11 +30,43 @@ namespace Examen
             return elResultado; 
         }
 
-        public int AreaCuadrado(int lado)
+        public double AreaCuadrado(double lado)
         {
-            int elResultado;
+            double elResultado;
             var laAccion = new Dominio.Acciones.CalcularArea();
             elResultado = laAccion.CalcularAreaCuadrado(lado);
+            return elResultado;
+        }
+
+        public double AreaRectangulo(double largo, double ancho)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaRectangulo(largo, ancho);
+            return elResultado;
+        }
+
+        public double AreaRombo(double diagonalMayor, double diagonalMenor)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaRombo(diagonalMayor, diagonalMenor);
+            return elResultado;
+        }
+
+        public double AreaPoligonoRegular(double lado, double apotema, int cantidadLados)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaPoligonoRegular(lado, apotema, cantidadLados);
+            return elResultado;
+        }
+
+        public double AreaTrapecio(double baseMayor, double baseMenor, double altura)
+        {
+            double elResultado;
+            var laAccion = new Dominio.Acciones.CalcularArea();
+            elResultado = laAccion.CalcularAreaTrapecio(baseMayor, baseMenor, altura);
             return elResultado;
         }
 
@@ -56,6 +88,6 @@ namespace Examen
                 composite.StringValue += "Suffix";
             }
             return composite;
-        }       
+        }
     }
 }
