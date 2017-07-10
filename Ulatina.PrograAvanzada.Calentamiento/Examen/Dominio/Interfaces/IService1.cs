@@ -15,6 +15,10 @@ namespace Examen
         // perimetros **********************************************
         [OperationContract]
         double PerimetroTriangulo(double lado1, double lado2, double lado3);
+
+        [OperationContract]
+        double PerimetroCuadrado(double _lado);
+
         
         // areas ***************************************************
         [OperationContract]

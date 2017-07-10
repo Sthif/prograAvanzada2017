@@ -19,5 +19,22 @@ namespace Examen.Dominio.Especificaciones
             }
             return elResultado;
         }
+
+        public double PerimetroCuadrado(double _lado1)
+        {
+            double ElResultado = 0;
+            var LaValidacion = new Validaciones.LadosValidos().LadosPositivos();
+            bool LadosPositivos = LaValidacion.ladosPositivos();
+
+            if(LadosPositivos) 
+            {
+                double ElPerimetro = _lado1 * 4;
+                ElResultado = ElPerimetro;
+                return ElResultado;
+
+            }
+        
+            return ElResultado;
+        }
     }
 }

@@ -14,5 +14,16 @@ namespace Examen.Dominio.Acciones
             elResultado = laEspecificacion.PerimetroTriangulo(lado1, lado2, lado3);
             return elResultado;
         }
+
+        public double CalcularPerimetroCuadrado(double _lado)
+        {
+          double ElResultado =0;
+            var laEpecificacion = new Especificaciones.CalculePerimetro();
+            ElResultado = laEpecificacion.PerimetroCuadrado(_lado);
+            return ElResultado;
+
+        } 
+
+
     }
 }

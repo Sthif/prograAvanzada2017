@@ -21,6 +21,16 @@ namespace Examen
             return elResultado;
         }
 
+        public double PerimetroCuadrado(int _lado)
+        {
+        
+            double ElResultado;
+            var LaAccion = new Dominio.Acciones.CalcularPerimetro();
+            ElResultado = LaAccion.CalcularPerimetroCuadrado(_lado);
+            return ElResultado;
+        }                                                 
+
+
         // ********** AREAS **********
         public double AreaTriangulo(double lado1, double lado2, double lado3)
         {
