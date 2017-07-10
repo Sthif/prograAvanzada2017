@@ -74,12 +74,15 @@
     </Compile>
     <Compile Include="Dominio\Acciones\CalcularArea.cs" />
     <Compile Include="Dominio\Acciones\CalcularPerimetro.cs" />
+    <Compile Include="Dominio\Acciones\CalcularVolumen.cs" />
     <Compile Include="Dominio\Especificaciones\CalculeArea.cs" />
     <Compile Include="Dominio\Especificaciones\CalculePerimetro.cs" />
+    <Compile Include="Dominio\Especificaciones\CalculeVolumen.cs" />
     <Compile Include="Dominio\Servicios\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="Dominio\Interfaces\IService1.cs" />
+    <Compile Include="Dominio\Validaciones\Positivos.cs" />
     <Compile Include="Dominio\Validaciones\Triangulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

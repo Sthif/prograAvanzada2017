@@ -36,7 +36,7 @@ namespace Examen
         {
             double elResultado;
             var laAccion = new Dominio.Acciones.CalcularVolumen();
-            elResultado = laAccion.CalcularVolumenCilindro(Radio,Altura);
+            elResultado = laAccion.Cilindro(Radio,Altura);
             return elResultado; 
         }
 
@@ -44,7 +44,7 @@ namespace Examen
         {
             double elResultado;
             var laAccion = new Dominio.Acciones.CalcularVolumen();
-            elResultado = laAccion.CalcularVolumenEsfera(Radio);
+            elResultado = laAccion.Esfera(Radio);
             return elResultado; 
         }
 
@@ -52,7 +52,7 @@ namespace Examen
         {
            double elResultado;
             var laAccion = new Dominio.Acciones.CalcularVolumen();
-            elResultado = laAccion.CalcularVolumenCono(Radio,Altura);
+            elResultado = laAccion.Cono(Radio,Altura);
             return elResultado;  
         }
 
@@ -60,7 +60,7 @@ namespace Examen
         { 
 		    double elResultado;
             var laAccion = new Dominio.Acciones.CalcularVolumen();
-            elResultado = laAccion.CalcularVolumenCubo(Arista);
+            elResultado = laAccion.Cubo(Arista);
             return elResultado;  
         }
 
@@ -68,15 +68,15 @@ namespace Examen
         {
              double elResultado;
             var laAccion = new Dominio.Acciones.CalcularVolumen();
-            elResultado = laAccion.CalcularVolumenPrisma(Largo,Ancho,Altura);
+            elResultado = laAccion.Prisma(Largo,Ancho,Altura);
             return elResultado; 
         }
 
 		  public double VolumenPiramideCuadrada(int LadoBase, int Altura)
         {
-             double elResultado;
+            double elResultado;
             var laAccion = new Dominio.Acciones.CalcularVolumen();
-            elResultado = laAccion.CalcularVolumenCuadrada(LadoBase,Altura);
+            elResultado = laAccion.Cuadrada(LadoBase,Altura);
             return elResultado; 
         }		
 
@@ -84,7 +84,7 @@ namespace Examen
         {
             double elResultado;
             var laAccion = new Dominio.Acciones.CalcularVolumen();
-            elResultado = laAccion.CalcularVolumenPiramidePoligonal(Apotema,Altura,CantLadosBaseYLargo);
+            elResultado = laAccion.PiramidePoligonal(Apotema,Altura,CantLadosBaseYLargo);
             return elResultado; 
         }
 
