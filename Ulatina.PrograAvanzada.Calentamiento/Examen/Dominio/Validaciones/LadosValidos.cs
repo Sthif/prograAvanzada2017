@@ -34,7 +34,12 @@ namespace Examen.Dominio.Validaciones
             else return false;
         }
 
-        public bool LadosPositivos(double lado1, double lado2)
+		internal object LadosPositivos()
+		{
+			throw new NotImplementedException();
+		}
+
+		public bool LadosPositivos(double lado1, double lado2)
         {
             if ((lado1 > 0) && (lado2 > 0))
             {
@@ -52,7 +57,7 @@ namespace Examen.Dominio.Validaciones
             else return false;
         }
 
-        public bool CantidadValida(int cantidadLados)
+        public bool CantidadValida(double cantidadLados)
         {
             if (cantidadLados >= 5)
             {

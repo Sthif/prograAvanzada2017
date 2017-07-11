@@ -15,14 +15,14 @@ namespace Examen.Dominio.Acciones
             return elResultado;
         }
 
-        public double CalcularPerimetroCuadrado(double _lado)
-        {
-          double ElResultado =0;
-            var laEpecificacion = new Especificaciones.CalculePerimetro();
-            ElResultado = laEpecificacion.PerimetroCuadrado(_lado);
-            return ElResultado;
+        //public double CalcularPerimetroCuadrado(double _lado)
+        //{
+        //  double ElResultado =0;
+        //    var laEpecificacion = new Especificaciones.CalculePerimetro();
+        //    ElResultado = laEpecificacion.PerimetroCuadrado(_lado);
+        //    return ElResultado;
 
-        } 
+        //} 
 
 
     }

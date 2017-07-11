@@ -75,6 +75,13 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ServiceReference1Examen\Service1.disco" />
+    <None Include="Connected Services\ServiceReference1Examen\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1Examen\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1Examen\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="HelloWorld.aspx" />
     <Content Include="HelloWorld.html" />
     <Content Include="packages.config" />
@@ -89,6 +96,19 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Connected Services\OperacionesMatematicas\Ulatina.PrograAvanzada.AplicacionWeb.OperacionesMatematicas.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference1Examen\Service1.wsdl" />
+    <None Include="Connected Services\ServiceReference1Examen\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1Examen\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1Examen\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ServiceReference1Examen\Ulatina.PrograAvanzada.AplicacionWeb.ServiceReference1Examen.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
@@ -108,6 +128,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ServiceReference1Examen\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="HelloWorld.aspx.cs">
       <DependentUpon>HelloWorld.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -122,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\OperacionesMatematicas\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1Examen\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:56625/Dominio/Servicios/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:56625/Dominio/Servicios/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56625/Dominio/Servicios/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Examen" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_PerimetroTriangulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:PerimetroTriangulo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PerimetroTriangulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PerimetroTrianguloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PerimetroCuadrado_InputMessage">
+    <wsdl:part name="parameters" element="tns:PerimetroCuadrado" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PerimetroCuadrado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PerimetroCuadradoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaTriangulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AreaTriangulo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaTriangulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AreaTrianguloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaCuadrado_InputMessage">
+    <wsdl:part name="parameters" element="tns:AreaCuadrado" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaCuadrado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AreaCuadradoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaRectangulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AreaRectangulo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaRectangulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AreaRectanguloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaRombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AreaRombo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaRombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AreaRomboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaPoligonoRegular_InputMessage">
+    <wsdl:part name="parameters" element="tns:AreaPoligonoRegular" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaPoligonoRegular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AreaPoligonoRegularResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaTrapecio_InputMessage">
+    <wsdl:part name="parameters" element="tns:AreaTrapecio" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaTrapecio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AreaTrapecioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaRomboide_InputMessage">
+    <wsdl:part name="parameters" element="tns:AreaRomboide" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AreaRomboide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AreaRomboideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenCilindro_InputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenCilindro" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenCilindro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenCilindroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenEsfera_InputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenEsfera" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenEsfera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenEsferaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenCono_InputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenCono" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenCono_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenConoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenCubo_InputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenCubo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenCubo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenCuboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenPrisma_InputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenPrisma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenPrisma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenPrismaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenPiramideCuadrada_InputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenPiramideCuadrada" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenPiramideCuadrada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenPiramideCuadradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenPiramidePoligonal_InputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenPiramidePoligonal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VolumenPiramidePoligonal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VolumenPiramidePoligonalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="PerimetroTriangulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PerimetroTriangulo" message="tns:IService1_PerimetroTriangulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PerimetroTrianguloResponse" message="tns:IService1_PerimetroTriangulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PerimetroCuadrado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PerimetroCuadrado" message="tns:IService1_PerimetroCuadrado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PerimetroCuadradoResponse" message="tns:IService1_PerimetroCuadrado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaTriangulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AreaTriangulo" message="tns:IService1_AreaTriangulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AreaTrianguloResponse" message="tns:IService1_AreaTriangulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaCuadrado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AreaCuadrado" message="tns:IService1_AreaCuadrado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AreaCuadradoResponse" message="tns:IService1_AreaCuadrado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaRectangulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AreaRectangulo" message="tns:IService1_AreaRectangulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AreaRectanguloResponse" message="tns:IService1_AreaRectangulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaRombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AreaRombo" message="tns:IService1_AreaRombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AreaRomboResponse" message="tns:IService1_AreaRombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaPoligonoRegular">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AreaPoligonoRegular" message="tns:IService1_AreaPoligonoRegular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AreaPoligonoRegularResponse" message="tns:IService1_AreaPoligonoRegular_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaTrapecio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AreaTrapecio" message="tns:IService1_AreaTrapecio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AreaTrapecioResponse" message="tns:IService1_AreaTrapecio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AreaRomboide">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AreaRomboide" message="tns:IService1_AreaRomboide_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AreaRomboideResponse" message="tns:IService1_AreaRomboide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VolumenCilindro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VolumenCilindro" message="tns:IService1_VolumenCilindro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VolumenCilindroResponse" message="tns:IService1_VolumenCilindro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VolumenEsfera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VolumenEsfera" message="tns:IService1_VolumenEsfera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VolumenEsferaResponse" message="tns:IService1_VolumenEsfera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VolumenCono">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VolumenCono" message="tns:IService1_VolumenCono_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VolumenConoResponse" message="tns:IService1_VolumenCono_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VolumenCubo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VolumenCubo" message="tns:IService1_VolumenCubo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VolumenCuboResponse" message="tns:IService1_VolumenCubo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VolumenPrisma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VolumenPrisma" message="tns:IService1_VolumenPrisma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VolumenPrismaResponse" message="tns:IService1_VolumenPrisma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VolumenPiramideCuadrada">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VolumenPiramideCuadrada" message="tns:IService1_VolumenPiramideCuadrada_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VolumenPiramideCuadradaResponse" message="tns:IService1_VolumenPiramideCuadrada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VolumenPiramidePoligonal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VolumenPiramidePoligonal" message="tns:IService1_VolumenPiramidePoligonal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VolumenPiramidePoligonalResponse" message="tns:IService1_VolumenPiramidePoligonal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PerimetroTriangulo">
+      <soap:operation soapAction="http://tempuri.org/IService1/PerimetroTriangulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerimetroCuadrado">
+      <soap:operation soapAction="http://tempuri.org/IService1/PerimetroCuadrado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaTriangulo">
+      <soap:operation soapAction="http://tempuri.org/IService1/AreaTriangulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaCuadrado">
+      <soap:operation soapAction="http://tempuri.org/IService1/AreaCuadrado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaRectangulo">
+      <soap:operation soapAction="http://tempuri.org/IService1/AreaRectangulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaRombo">
+      <soap:operation soapAction="http://tempuri.org/IService1/AreaRombo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaPoligonoRegular">
+      <soap:operation soapAction="http://tempuri.org/IService1/AreaPoligonoRegular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaTrapecio">
+      <soap:operation soapAction="http://tempuri.org/IService1/AreaTrapecio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaRomboide">
+      <soap:operation soapAction="http://tempuri.org/IService1/AreaRomboide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumenCilindro">
+      <soap:operation soapAction="http://tempuri.org/IService1/VolumenCilindro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumenEsfera">
+      <soap:operation soapAction="http://tempuri.org/IService1/VolumenEsfera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumenCono">
+      <soap:operation soapAction="http://tempuri.org/IService1/VolumenCono" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumenCubo">
+      <soap:operation soapAction="http://tempuri.org/IService1/VolumenCubo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumenPrisma">
+      <soap:operation soapAction="http://tempuri.org/IService1/VolumenPrisma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumenPiramideCuadrada">
+      <soap:operation soapAction="http://tempuri.org/IService1/VolumenPiramideCuadrada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumenPiramidePoligonal">
+      <soap:operation soapAction="http://tempuri.org/IService1/VolumenPiramidePoligonal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:56625/Dominio/Servicios/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

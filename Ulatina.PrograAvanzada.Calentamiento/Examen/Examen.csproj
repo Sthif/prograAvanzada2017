@@ -60,18 +60,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Calculadora.aspx" />
     <Content Include="Dominio\Servicios\Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculadora.aspx.cs">
-      <DependentUpon>Calculadora.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Calculadora.aspx.designer.cs">
-      <DependentUpon>Calculadora.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Dominio\Acciones\CalcularVolumen.cs" />
+    <Compile Include="Dominio\Especificaciones\CalculeVolumen.cs" />
     <Compile Include="Dominio\Acciones\CalcularArea.cs" />
     <Compile Include="Dominio\Acciones\CalcularPerimetro.cs" />
     <Compile Include="Dominio\Especificaciones\CalculeArea.cs" />
@@ -81,6 +75,7 @@
     </Compile>
     <Compile Include="Dominio\Interfaces\IService1.cs" />
     <Compile Include="Dominio\Validaciones\LadosValidos.cs" />
+    <Compile Include="Dominio\Validaciones\Positivos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

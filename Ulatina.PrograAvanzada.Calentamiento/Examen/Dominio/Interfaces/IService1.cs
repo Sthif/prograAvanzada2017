@@ -18,29 +18,41 @@ namespace Examen
 
         [OperationContract]
         double PerimetroCuadrado(double _lado);
-
         
         // areas ***************************************************
         [OperationContract]
         double AreaTriangulo(double lado1, double lado2, double lado3);
+		[OperationContract]
+		double AreaCuadrado(double lado);
+		[OperationContract]
+		double AreaRectangulo(double largo, double ancho);
+		[OperationContract]
+		double AreaRombo(double diagonalMayor, double diagonalMenor);
+		[OperationContract]
+		double AreaPoligonoRegular(double lado, double apotema, int cantidadLados);
+		[OperationContract]
+		double AreaTrapecio(double baseMayor, double baseMenor, double altura);
+		[OperationContract]
+		double AreaRomboide(double baseRomboide, double altura);
 
-        double AreaCuadrado(double lado);
+		// volumenes ***********************************************
+		[OperationContract]		
+		double VolumenCilindro(double Radio, double Altura);
+		[OperationContract]
+		double VolumenEsfera(double Radio);
+		[OperationContract]
+		double VolumenCono(double Radio, double Altura);
+		[OperationContract]
+		double VolumenCubo(double Arista);
+		[OperationContract]
+		double VolumenPrisma(double Largo, double Ancho, double Altura);
+		[OperationContract]
+		double VolumenPiramideCuadrada(double LadoBase, double Altura);
+		[OperationContract]
+		double VolumenPiramidePoligonal(double Apotema, double Altura, double CantLadosBaseYLargo);
 
-        double AreaRectangulo(double largo, double ancho);
-
-        double AreaRombo(double diagonalMayor, double diagonalMenor);
-
-        double AreaPoligonoRegular(double lado, double apotema, int cantidadLados);
-
-        double AreaTrapecio(double baseMayor, double baseMenor, double altura);
-
-        double AreaRomboide(double baseRomboide, double altura);
-
-        // volumenes ***********************************************
-        
-        
-        // sistema *************************************************
-        [OperationContract]
+		// sistema *************************************************
+		[OperationContract]
         string GetData(int value);
 
         [OperationContract]

@@ -22,8 +22,10 @@ namespace Ulatina.PrograAvanzada.AplicacionWeb.Acciones
             // convertir el resultado a string
             elResultado = elResultadoNumerico.ToString();
             // retornar
+		
             return elResultado;
-        }
+
+		}
 
         private double Parsear(string elNumeroEnString)
         {

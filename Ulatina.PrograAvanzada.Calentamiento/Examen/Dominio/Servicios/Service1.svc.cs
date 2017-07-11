@@ -21,14 +21,14 @@ namespace Examen
             return elResultado;
         }
 
-        public double PerimetroCuadrado(int _lado)
-        {
+        //public double PerimetroCuadrado(int _lado)
+        //{
         
-            double ElResultado;
-            var LaAccion = new Dominio.Acciones.CalcularPerimetro();
-            ElResultado = LaAccion.CalcularPerimetroCuadrado(_lado);
-            return ElResultado;
-        }                                                 
+        //    //double ElResultado;
+        //    //var LaAccion = new Dominio.Acciones.CalcularPerimetro();
+        //    //ElResultado = LaAccion.CalcularPerimetroCuadrado(_lado);
+        //    //return ElResultado;
+        //}                                                 
 
 
         // ********** AREAS **********
@@ -88,12 +88,68 @@ namespace Examen
             return elResultado;
         }
 
-        // ********** VOLUMENES **********
+		// ********** VOLUMENES **********
+
+		public double VolumenCilindro(double Radio, double Altura)
+		{
+			double elResultado;
+			var laAccion = new Dominio.Acciones.CalcularVolumen();
+			elResultado = laAccion.Cilindro(Radio, Altura);
+			return elResultado;
+		}
+
+		public double VolumenEsfera(double Radio)
+		{
+			double elResultado;
+			var laAccion = new Dominio.Acciones.CalcularVolumen();
+			elResultado = laAccion.Esfera(Radio);
+			return elResultado;
+		}
+
+		public double VolumenCono(double Radio, double Altura)
+		{
+			double elResultado;
+			var laAccion = new Dominio.Acciones.CalcularVolumen();
+			elResultado = laAccion.Cono(Radio, Altura);
+			return elResultado;
+		}
+
+		public double VolumenCubo(double Arista)
+		{
+			double elResultado;
+			var laAccion = new Dominio.Acciones.CalcularVolumen();
+			elResultado = laAccion.Cubo(Arista);
+			return elResultado;
+		}
+
+		public double VolumenPrisma(double Largo, double Ancho, double Altura)
+		{
+			double elResultado;
+			var laAccion = new Dominio.Acciones.CalcularVolumen();
+			elResultado = laAccion.Prisma(Largo, Ancho, Altura);
+			return elResultado;
+		}
+
+		public double VolumenPiramideCuadrada(double LadoBase, double Altura)
+		{
+			double elResultado;
+			var laAccion = new Dominio.Acciones.CalcularVolumen();
+			elResultado = laAccion.Cuadrada(LadoBase, Altura);
+			return elResultado;
+		}
+
+		public double VolumenPiramidePoligonal(double Apotema, double Altura, double CantLadosBaseYLargo)
+		{
+			double elResultado;
+			var laAccion = new Dominio.Acciones.CalcularVolumen();
+			elResultado = laAccion.PiramidePoligonal(Apotema, Altura, CantLadosBaseYLargo);
+			return elResultado;
+		}
 
 
 
-        // ********** SISTEMA **********
-        public string GetData(int value)
+		// ********** SISTEMA **********
+		public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
         }
@@ -110,5 +166,10 @@ namespace Examen
             }
             return composite;
         }
-    }
+
+		public double PerimetroCuadrado(double _lado)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }
