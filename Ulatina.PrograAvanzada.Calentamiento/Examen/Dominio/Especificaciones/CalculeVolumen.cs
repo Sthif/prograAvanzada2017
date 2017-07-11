@@ -8,7 +8,7 @@ namespace Examen.Dominio.Especificaciones
 		{
 		}
 
-		internal double VolumendelCilindro(double radio, double altura)
+		internal double VolumendelCilindro(int radio, int altura)
 		{
 
 			double elResultado = 0;
@@ -27,7 +27,7 @@ namespace Examen.Dominio.Especificaciones
 
 		}
 
-		internal double VolumendelEsfera(double radio)
+		internal double VolumendelEsfera(int radio)
 		{
 			double elResultado = 0;
 			var laValidacion = new Validaciones.Positivos();
@@ -44,7 +44,7 @@ namespace Examen.Dominio.Especificaciones
 
 		}
 
-		internal double VolumendelCono(double radio, double altura)
+		internal double VolumendelCono(int radio, int altura)
 		{
 			double elResultado = 0;
 			var laValidacion = new Validaciones.Positivos();
@@ -53,7 +53,7 @@ namespace Examen.Dominio.Especificaciones
 
 			if (IngresoValido == true && IngresoValido2 == true)
 			{
-				double elVolumen = (radio * radio * altura * Math.PI) / 3;
+				double elVolumen = (1 / 3) * Math.PI * Math.Pow(radio, 2)*altura;
 				elResultado = elVolumen;
 				return elResultado;
 			}
@@ -61,7 +61,7 @@ namespace Examen.Dominio.Especificaciones
 			return elResultado;
 		}
 
-		internal double VolumendelCubo(double arista)
+		internal double VolumendelCubo(int arista)
 		{
 			double elResultado = 0;
 			var laValidacion = new Validaciones.Positivos();
@@ -77,7 +77,7 @@ namespace Examen.Dominio.Especificaciones
 			return elResultado;
 		}
 
-		internal double VolumendelPrisma(double largo, double ancho, double altura)
+		internal double VolumendelPrisma(int largo, int ancho, int altura)
 		{
 			double elResultado = 0;
 			var laValidacion = new Validaciones.Positivos();
@@ -97,7 +97,7 @@ namespace Examen.Dominio.Especificaciones
 			return elResultado;
 		}
 
-		internal double VolumendePiramidePoligonal(double apotema, double altura, double cantLadosBaseYLargo)
+		internal double VolumendePiramidePoligonal(int apotema, int altura, int cantLadosBaseYLargo)
 		{
 			double elResultado = 0;
 			var laValidacion = new Validaciones.Positivos();
@@ -109,7 +109,7 @@ namespace Examen.Dominio.Especificaciones
 			{
 
 				double Area = 1;// area Piramide
-				double elVolumen =  (Area * altura)/3;
+				double elVolumen = (1 / 3) * Area * altura;
 				elResultado = elVolumen;
 				return elResultado;
 			}
@@ -117,7 +117,7 @@ namespace Examen.Dominio.Especificaciones
 			return elResultado;
 		}
 
-		internal double VolumendelPiramideCuadrado(double ladoBase, double altura)
+		internal double VolumendelPiramideCuadrado(int ladoBase, int altura)
 		{
 			double elResultado = 0;
 			var laValidacion = new Validaciones.Positivos();
@@ -127,7 +127,7 @@ namespace Examen.Dominio.Especificaciones
 			if (IngresoValido == true && IngresoValido2 == true )
 			{
 
-				double elVolumen = (ladoBase * ladoBase * altura) / 3;
+				double elVolumen = (1/3)*Math.Pow(ladoBase, 2)*altura;
 				elResultado = elVolumen;
 				return elResultado;
 			}

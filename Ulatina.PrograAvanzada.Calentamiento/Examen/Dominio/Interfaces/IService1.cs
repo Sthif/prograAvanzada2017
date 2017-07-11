@@ -12,51 +12,52 @@ namespace Examen
     [ServiceContract]
     public interface IService1
     {
+        
         // perimetros **********************************************
         [OperationContract]
-        double PerimetroTriangulo(double lado1, double lado2, double lado3);
-
-        [OperationContract]
-        double PerimetroCuadrado(double _lado);
+        int PerimetroTriangulo(int lado1, int lado2, int lado3);
         
-        // areas ***************************************************
+        
+        // areas ******************************************
+
         [OperationContract]
-        double AreaTriangulo(double lado1, double lado2, double lado3);
-		[OperationContract]
-		double AreaCuadrado(double lado);
-		[OperationContract]
-		double AreaRectangulo(double largo, double ancho);
-		[OperationContract]
-		double AreaRombo(double diagonalMayor, double diagonalMenor);
-		[OperationContract]
-		double AreaPoligonoRegular(double lado, double apotema, int cantidadLados);
-		[OperationContract]
-		double AreaTrapecio(double baseMayor, double baseMenor, double altura);
-		[OperationContract]
-		double AreaRomboide(double baseRomboide, double altura);
+        double AreaTriangulo(int lado1, int lado2, int lado3);
 
-		// volumenes ***********************************************
-		[OperationContract]		
-		double VolumenCilindro(double Radio, double Altura);
-		[OperationContract]
-		double VolumenEsfera(double Radio);
-		[OperationContract]
-		double VolumenCono(double Radio, double Altura);
-		[OperationContract]
-		double VolumenCubo(double Arista);
-		[OperationContract]
-		double VolumenPrisma(double Largo, double Ancho, double Altura);
-		[OperationContract]
-		double VolumenPiramideCuadrada(double LadoBase, double Altura);
-		[OperationContract]
-		double VolumenPiramidePoligonal(double Apotema, double Altura, double CantLadosBaseYLargo);
 
-		// sistema *************************************************
-		[OperationContract]
+	   // Volumenes ******************************************
+
+	    [OperationContract]
+        double VolumenCilindro(int Radio, int Altura);
+
+		   [OperationContract]
+        double VolumenEsfera(int Radio);
+
+		   [OperationContract]
+        double VolumenCono(int Radio, int Altura);
+
+		   [OperationContract]
+        double VolumenCubo(int Arista);
+
+		   [OperationContract]
+        double VolumenPrisma(int Largo, int Ancho, int Altura);
+
+		   [OperationContract]
+        double VolumenPiramideCuadrada(int LadoBase, int Altura);
+
+		   [OperationContract]
+        double VolumenPiramidePoligonal(int Apotema, int Altura ,int CantLadosBaseYLargo);
+
+
+
+        [OperationContract]
         string GetData(int value);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
+
+
+
+
 
         // TODO: Add your service operations here
     }

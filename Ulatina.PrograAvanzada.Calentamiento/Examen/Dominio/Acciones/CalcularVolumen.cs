@@ -8,7 +8,7 @@ namespace Examen.Dominio.Acciones
 		{
 		}
 
-		internal double Cilindro(double radio, double altura)
+		internal double Cilindro(int radio, int altura)
 		{
 			double elResultado = 0;
 			var laEspecificacion = new Especificaciones.CalculeVolumen();
@@ -16,7 +16,7 @@ namespace Examen.Dominio.Acciones
 			return elResultado;
 		}
 
-		internal double Esfera(double radio)
+		internal double Esfera(int radio)
 		{
 			double elResultado = 0;
 			var laEspecificacion = new Especificaciones.CalculeVolumen();
@@ -24,7 +24,7 @@ namespace Examen.Dominio.Acciones
 			return elResultado;
 		}
 
-		internal double Cono(double radio, double altura)
+		internal double Cono(int radio, int altura)
 		{
 			double elResultado = 0;
 			var laEspecificacion = new Especificaciones.CalculeVolumen();
@@ -32,7 +32,7 @@ namespace Examen.Dominio.Acciones
 			return elResultado;
 		}
 
-		internal double Cubo(double arista)
+		internal double Cubo(int arista)
 		{
 			double elResultado = 0;
 			var laEspecificacion = new Especificaciones.CalculeVolumen();
@@ -40,7 +40,7 @@ namespace Examen.Dominio.Acciones
 			return elResultado;
 		}
 
-		internal double Prisma(double largo, double ancho, double altura)
+		internal double Prisma(int largo, int ancho, int altura)
 		{
 			double elResultado = 0;
 			var laEspecificacion = new Especificaciones.CalculeVolumen();
@@ -48,7 +48,7 @@ namespace Examen.Dominio.Acciones
 			return elResultado;
 		}
 
-		internal double Cuadrada(double ladoBase, double altura)
+		internal double Cuadrada(int ladoBase, int altura)
 		{
 			double elResultado = 0;
 			var laEspecificacion = new Especificaciones.CalculeVolumen();
@@ -56,7 +56,7 @@ namespace Examen.Dominio.Acciones
 			return elResultado;
 		}
 
-		internal double PiramidePoligonal(double apotema, double altura, double cantLadosBaseYLargo)
+		internal double PiramidePoligonal(int apotema, int altura, int cantLadosBaseYLargo)
 		{
 			double elResultado = 0;
 			var laEspecificacion = new Especificaciones.CalculeVolumen();

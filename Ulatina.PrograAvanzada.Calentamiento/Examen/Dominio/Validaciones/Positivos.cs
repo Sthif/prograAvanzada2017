@@ -6,10 +6,9 @@ namespace Examen.Dominio.Validaciones
 	{
 		public Positivos()
 		{
-
 		}
 
-		internal bool NumerosPositivos(double Numero)
+		internal bool NumerosPositivos(int Numero)
 		{
 
 			if (Numero > 0) { return true; } else { return false; }
